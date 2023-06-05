@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../../components/shared/hero/Hero";
 
 export default function Home() {
   return (
@@ -12,7 +13,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Home</h1>
+      <Hero
+        title="Transform Your Exterior with Expert Craftsmanship and Unparalleled Elegance"
+        primaryBtnText="Contact Us"
+        primaryBtnLink="/contact"
+        secondaryBtnText="View Portfolio"
+        secondaryBtnLink="/portfolio"
+      />
     </>
   );
 }
