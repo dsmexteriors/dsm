@@ -6,6 +6,8 @@ import TitleTextButton from "../../components/titleTextbutton/TitleTextButton";
 import Services from "../../components/services/Services";
 import About from "../../components/about/About";
 
+import styles from "../styles/home-portfolio.module.scss";
+
 import portOne from "../../public/portfolio-1.jpeg";
 import portTwo from "../../public/portfolio-2.jpeg";
 import iconOne from "../../public/iconOne.png";
@@ -32,7 +34,7 @@ export default function Home() {
         secondaryBtnText="View Portfolio"
         secondaryBtnLink="/portfolio"
       />
-      <section className="home-portfolio">
+      <section className={styles.homePortfolio}>
         <Container>
           <Row>
             <Col lg="12" className="text-center">
