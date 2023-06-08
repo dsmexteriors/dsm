@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "../styles/general.scss";
 import "../styles/typography.scss";
+import "../styles/button.scss";
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 import Navigation from "../../components/shared/nav/Navigation";

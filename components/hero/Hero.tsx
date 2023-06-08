@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ title, primaryBtnText, primaryBtnLink, seco
             <Link className="btn btn-primary" href={primaryBtnLink}>
               {primaryBtnText}
             </Link>
-            <Link className="btn btn-secondary" href={secondaryBtnLink}>
+            <Link className={`btn btn-secondary ${styles["btn-secondary"]}`} href={secondaryBtnLink}>
               {secondaryBtnText}
             </Link>
           </div>

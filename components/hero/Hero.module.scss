@@ -20,5 +20,12 @@
       font-weight: 500;
       margin-bottom: 20px;
     }
+    .btn-secondary {
+      margin-left: 20px;
+      @include bp-tablet-sm {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+    }
   }
 }

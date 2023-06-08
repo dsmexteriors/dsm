@@ -42,7 +42,9 @@ export default function Navigation() {
             <Nav className="ms-auto">
               <>
                 {navItems.map((i) => (
-                  <Nav.Link href={i.link}>{i.name}</Nav.Link>
+                  <Nav.Link key={i.name} href={i.link}>
+                    {i.name}
+                  </Nav.Link>
                 ))}
               </>
             </Nav>
