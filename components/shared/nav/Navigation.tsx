@@ -7,7 +7,7 @@ import styles from "./Navigation.module.scss";
 const navItems = [
   {
     name: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     name: "About",
@@ -34,9 +34,9 @@ const navItems = [
 export default function Navigation() {
   return (
     <div className={styles.nav}>
-      <Navbar className="fixed-top" bg="light" expand="lg">
+      <Navbar className={`fixed-top ${styles["fixed-top"]}`} bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+          <Navbar.Brand href="/">Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
