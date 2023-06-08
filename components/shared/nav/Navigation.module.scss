@@ -2,15 +2,20 @@
 @import "../../../src/styles/variables.scss";
 
 .nav {
-  border-bottom: 1px solid rgb(214, 214, 214);
-  padding-top: 10px;
-  padding-bottom: 10px;
   a {
     color: $blue;
     margin-left: 10px;
     margin-right: 10px;
     &:hover {
       color: $green;
+    }
+  }
+  .fixed-top {
+    height: 80px;
+    background: rgba($white, 0.95) !important;
+    border-bottom: 1px solid rgba($black, 0.1);
+    @include bp-tablet-sm {
+      height: inherit;
     }
   }
 }
