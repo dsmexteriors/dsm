@@ -14,6 +14,13 @@ export default function Footer() {
               Copyright &copy; {new Date().getFullYear()} DSM Exteriors | <Link href="/privacy">Privacy Policy</Link>
             </Col>
           </Row>
+          <Row>
+            <Col lg="12">
+              <p>
+                <a href="https://infused.agency">Niagara web design</a> by Infused Agency
+              </p>
+            </Col>
+          </Row>
         </Container>
       </footer>
     </>
