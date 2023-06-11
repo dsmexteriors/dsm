@@ -1,6 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
+import styles from "./home-services.module.scss";
+
 interface ServicesProps {
   title: string;
   imageOne: string;
@@ -33,20 +35,22 @@ const Services: React.FC<ServicesProps> = ({
             <hr />
           </Col>
         </Row>
-        <Row className="text-center">
-          <Col lg="4">
-            <Image className="img-fluid" src={imageOne} width={100} height={100} alt="Icon One" />
-            <h4>{titleOne}</h4>
-          </Col>
-          <Col lg="4">
-            <Image className="img-fluid" src={imageTwo} width={100} height={100} alt="Icon Two" />
-            <h4>{titleTwo}</h4>
-          </Col>
-          <Col lg="4">
-            <Image className="img-fluid" src={imageThree} width={100} height={100} alt="Icon Three" />
-            <h4>{titleThree}</h4>
-          </Col>
-        </Row>
+        <section className={styles.icons}>
+          <Row className="text-center">
+            <Col lg="4">
+              <Image className="img-fluid" src={imageOne} width={100} height={100} alt="Icon One" />
+              <h4>{titleOne}</h4>
+            </Col>
+            <Col lg="4">
+              <Image className="img-fluid" src={imageTwo} width={100} height={100} alt="Icon Two" />
+              <h4>{titleTwo}</h4>
+            </Col>
+            <Col lg="4">
+              <Image className="img-fluid" src={imageThree} width={100} height={100} alt="Icon Three" />
+              <h4>{titleThree}</h4>
+            </Col>
+          </Row>
+        </section>
         <Row>
           <Col lg="6">
             <p>{paraOne}</p>

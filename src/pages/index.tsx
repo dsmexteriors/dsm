@@ -6,7 +6,8 @@ import TitleTextButton from "../../components/titleTextbutton/TitleTextButton";
 import Services from "../../components/services/Services";
 import About from "../../components/about/About";
 
-import styles from "../styles/home-portfolio.module.scss";
+import styles from "../../components/titleTextbutton/home-portfolio.module.scss";
+import stylesServices from "../../components/services/home-services.module.scss";
 
 import portOne from "../../public/portfolio-1.jpeg";
 import portTwo from "../../public/portfolio-2.jpeg";
@@ -56,7 +57,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section className="home-services">
+      <section className={`${stylesServices["home-services"]}`}>
         <Services
           title="Our Services"
           imageOne={iconOne.src}

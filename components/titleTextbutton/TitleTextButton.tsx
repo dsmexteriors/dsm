@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from "../../src/styles/home-portfolio.module.scss";
+import styles from "./home-portfolio.module.scss";
 
 interface TitleTextButtonProps {
   title: string;
