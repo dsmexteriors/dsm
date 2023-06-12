@@ -18,6 +18,8 @@ const Process = () => {
     <>
       <div ref={ref}>
         <InnerHero title="Our Process" />
+        <title>Our Process | DSM Exteriors</title>
+        <meta name="description" content="Check out our process for DSM Exterior custom renovations." />
         <Container>
           <Row>
             <Col lg="12">
