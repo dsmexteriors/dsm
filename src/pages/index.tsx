@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
 import Hero from "../../components/hero/Hero";
 import TitleTextButton from "../../components/titleTextbutton/TitleTextButton";
@@ -18,6 +20,16 @@ import iconThree from "../../public/iconThree.png";
 import about from "../../public/about.jpeg";
 
 export default function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
   return (
     <>
       <Head>
@@ -48,20 +60,27 @@ export default function Home() {
               />
             </Col>
           </Row>
-          <Row>
-            <Col lg="6">
-              <Image className="img-fluid" src={portOne} width={640} height={382} alt="Portfolio One" />
-            </Col>
-            <Col lg="6">
-              <Image
-                className={`img-fluid ${styles.picTwo}`}
-                src={portTwo}
-                width={640}
-                height={382}
-                alt="Portfolio Two"
-              />
-            </Col>
-          </Row>
+          <motion.div
+            variants={{ hidden: { opacity: 0, y: 35 }, visible: { opacity: 1, y: 0 } }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <Row>
+              <Col lg="6">
+                <Image className="img-fluid" src={portOne} width={640} height={382} alt="Portfolio One" />
+              </Col>
+              <Col lg="6">
+                <Image
+                  className={`img-fluid ${styles.picTwo}`}
+                  src={portTwo}
+                  width={640}
+                  height={382}
+                  alt="Portfolio Two"
+                />
+              </Col>
+            </Row>
+          </motion.div>
         </Container>
       </section>
       <section className={`${stylesServices["home-services"]}`}>
