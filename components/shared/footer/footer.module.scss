@@ -1,0 +1,18 @@
+@import "../../../src/styles/breakpoints.scss";
+@import "../../../src/styles/variables.scss";
+
+.footer {
+  background: $green;
+  padding: 20px 0px 20px 0px;
+  p,
+  a {
+    color: $white;
+  }
+  .siteLink {
+    font-size: 12px;
+    a {
+      margin-top: -20px;
+      font-size: 12px;
+    }
+  }
+}

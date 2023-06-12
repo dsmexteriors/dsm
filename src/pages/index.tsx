@@ -8,6 +8,7 @@ import About from "../../components/about/About";
 
 import styles from "../../components/titleTextbutton/home-portfolio.module.scss";
 import stylesServices from "../../components/services/home-services.module.scss";
+import stylesAbout from "../../components/about/home-about.module.scss";
 
 import portOne from "../../public/portfolio-1.jpeg";
 import portTwo from "../../public/portfolio-2.jpeg";
@@ -52,7 +53,13 @@ export default function Home() {
               <Image className="img-fluid" src={portOne} width={640} height={382} alt="Portfolio One" />
             </Col>
             <Col lg="6">
-              <Image className="img-fluid" src={portTwo} width={640} height={382} alt="Portfolio Two" />
+              <Image
+                className={`img-fluid ${styles.picTwo}`}
+                src={portTwo}
+                width={640}
+                height={382}
+                alt="Portfolio Two"
+              />
             </Col>
           </Row>
         </Container>
@@ -70,7 +77,7 @@ export default function Home() {
           paraTwo="Whether you're looking to transform the look of your home, enhance its functionality, or improve its overall value, DSM Exteriors is here to bring your vision to life. With our dedication to quality workmanship, premium materials, and unparalleled customer service, we take pride in delivering exceptional results that stand the test of time. Contact us today and let us help you achieve the exterior of your dreams."
         />
       </section>
-      <section className="home-about">
+      <section className={`${stylesAbout["home-about"]}`}>
         <About
           title="About DSM Exterior"
           text="At DSM Exteriors, a family-run business with over 25 years of experience, we are driven by a passion for elevating houses into captivating masterpieces through our unrivaled expertise in siding, aluminum, gutter, railing, and column installations. Serving the Halton, Hamilton, Niagara, and Waterloo regions, our team of dedicated craftsmen is committed to delivering excellence, seamlessly blending premium materials, meticulous installation techniques, and meticulous attention to detail. Experience the awe-inspiring transformation of your home's exterior, fortified against the elements, all while receiving unparalleled service and remarkable results. Trust DSM Exteriors, your trusted companion for all your exterior construction endeavors!"

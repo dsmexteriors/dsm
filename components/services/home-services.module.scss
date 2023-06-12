@@ -6,6 +6,7 @@
   padding: 220px 0px 120px 0px;
   margin-top: -120px;
   @include bp-tablet-sm {
+    margin-top: 0px;
     padding: 40px 0px 40px 0px;
   }
   img {
@@ -17,5 +18,16 @@
   }
   .icons {
     margin-bottom: 20px;
+  }
+  hr {
+    @include bp-tablet-sm {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    @include bp-tablet-sm {
+      margin-bottom: 0px;
+    }
   }
 }
