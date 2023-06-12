@@ -7,6 +7,9 @@
   p,
   a {
     color: $white;
+    @include bp-tablet-sm {
+      justify-content: start !important;
+    }
   }
   .siteLink {
     font-size: 12px;
