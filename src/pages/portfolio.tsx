@@ -18,6 +18,11 @@ const Portfolio = () => {
     <>
       <div ref={ref}>
         <InnerHero title="Portfolio" />
+        <title>Portfolio | DSM Exteriors</title>
+        <meta
+          name="description"
+          content="Browse through our impressive portfolio showcasing the excellence of DSM Exteriors. Witness the transformation of residential and commercial properties with our top-quality siding, aluminum, gutter, and railing/column installations. Get inspired for your next project."
+        />
         <Container>
           <Row>
             <Col lg="12">

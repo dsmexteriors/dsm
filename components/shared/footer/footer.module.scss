@@ -3,7 +3,11 @@
 
 .footer {
   background: $green;
-  padding: 20px 0px 20px 0px;
+  padding: 40px 0px 40px 0px;
+  margin-top: 60px;
+  @include bp-tablet-sm {
+    margin-top: 20px;
+  }
   p,
   a {
     color: $white;

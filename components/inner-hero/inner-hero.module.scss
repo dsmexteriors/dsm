@@ -2,9 +2,9 @@
 @import "../../src/styles/variables.scss";
 
 .inner-hero {
-  padding: 200px 0px 120px 0px;
-  background-image: linear-gradient(to left, rgba($green, 0.52), rgba($blue, 0.73));
-  margin-bottom: 120px;
+  padding: 160px 0px 80px 0px;
+  background-image: linear-gradient(to left, rgba($green, 1), rgba($blue, 1));
+  margin-bottom: 80px;
   @include bp-tablet-sm {
     padding: 110px 0px 60px 0px;
     margin-bottom: 40px;
