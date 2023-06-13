@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <div ref={ref}>
         <InnerHero title="Contact Us" />
-        <title>Our Process | DSM Exteriors</title>
+        <title>Contact Us | DSM Exteriors</title>
         <meta
           name="description"
           content="Get in touch with DSM Exteriors today. Our friendly and knowledgeable team is here to assist you with any questions, inquiries, or project discussions. Reach out to us via phone, email, or by filling out the convenient form. Let us help you transform your property with our exceptional services."
