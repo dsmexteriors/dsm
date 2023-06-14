@@ -53,6 +53,22 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.42.0.tgz"
   integrity sha512-6SWlXpWU5AvId8Ac7zjzmIOqMOba/JWY8XZ4A7q7Gn1Vlfg/SFFIlrtHXt9nPn4op9ZPAkl91Jao+QQv3r/ukw==
 
+"@formspree/core@^2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@formspree/core/-/core-2.8.1.tgz#020485c030deb2213526d24c4d87e86991a2ad74"
+  integrity sha512-MkMWcI8EnIIy3ryB3tdRynC134BTMVLzSq5i/ACrcD/F10tbSffOPOOVpQ/tz9BSrCuCyeBJShAwllfifz52zg==
+  dependencies:
+    "@stripe/stripe-js" "^1.35.0"
+
+"@formspree/react@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@formspree/react/-/react-2.4.2.tgz#19d3cea54fad61c93310321cceaee75170fe9498"
+  integrity sha512-z7yAutzP8FgO4HY8y+OJGcjP6fvzUS4w9wVmlhXJWZRg5jFLPHWMl3CFGbIYruBha/xEP+3jZBjVnxaAVEgmbg==
+  dependencies:
+    "@formspree/core" "^2.8.1"
+    "@stripe/react-stripe-js" "^1.7.1"
+    "@stripe/stripe-js" "^1.35.0"
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.10.tgz"
@@ -200,6 +216,18 @@
   version "1.3.0"
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.3.0.tgz"
   integrity sha512-IthPJsJR85GhOkp3Hvp8zFOPK5ynKn6STyHa/WZpioK7E1aYDiBzpqQPrngc14DszIUkIrdd3k9Iu0XSzlP/1w==
+
+"@stripe/react-stripe-js@^1.7.1":
+  version "1.16.5"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-1.16.5.tgz#51cf862b50ca91ae6193c77a5bec889e81047f10"
+  integrity sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^1.35.0":
+  version "1.54.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.54.0.tgz#f92f6b646533776a41bc62b650d2a03f1e282af8"
+  integrity sha512-nElTXkS+nMfDNMkWfLmyeqHQfMGJ1JjrjAVMibV61Oc/rYdUv0cKRYCi1l4ivZ5SySB3vQLcLolxbKBkbNznZA==
 
 "@swc/helpers@0.5.1":
   version "0.5.1"
@@ -1927,7 +1955,7 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^4.0.0"
 
-prop-types@^15.6.2, prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1945,6 +1973,13 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+react-alice-carousel@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-2.7.1.tgz#0a92db78535d2d7e010633f39dd483f44dc8cfae"
+  integrity sha512-8ljKi5y+eqlsRkO4qRxEXIP0067w/4zvZvpJ66w+eAbeF0hIgC3iLeSmVtNc+F6ISzFsEJX0cOx7jIawXs0G8A==
+  dependencies:
+    vanilla-swipe "^2.4.1"
 
 react-bootstrap@^2.7.4:
   version "2.7.4"
@@ -1971,6 +2006,11 @@ react-dom@18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-image-gallery@^1.2.12:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.2.12.tgz#b08a633cc336bab2a5afdb96941e023925043c6a"
+  integrity sha512-JIh85lh0Av/yewseGJb/ycg00Y/weQiZEC/BQueC2Z5jnYILGB6mkxnrOevNhsM2NdZJpvcDekCluhy6uzEoTA==
 
 react-is@^16.13.1, react-is@^16.3.2:
   version "16.13.1"
@@ -2370,6 +2410,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+vanilla-swipe@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/vanilla-swipe/-/vanilla-swipe-2.4.1.tgz#697d58bde3729db3c80fd3de488a54a8eae05664"
+  integrity sha512-o6pfI0dipet88ZnPLV4Jx04Ia+U3xANh14vhROW2TOe/mrwk2JGG68+Z0BPoD1YUcQQEnK4SZBXkqFe+K1l7/w==
 
 warning@^4.0.0, warning@^4.0.3:
   version "4.0.3"

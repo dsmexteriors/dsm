@@ -1,9 +1,15 @@
 import { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { useAnimation, useInView } from "framer-motion";
+import { useForm, ValidationError } from "@formspree/react";
 import { Container, Row, Col } from "react-bootstrap";
 import { InnerHero } from "../../components/inner-hero/InnerHero";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xvonekpg");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -33,6 +39,23 @@ const Contact = () => {
                 we will get back to you promptly. Let us help you transform your property with our top-notch siding,
                 aluminum, gutter, and railing/column installation services.
               </p>
+              <form onSubmit={handleSubmit}>
+                {/* Name */}
+                <input id="name" type="text" name="name" placeholder="Name" required />
+                <ValidationError prefix="Name" field="name" errors={state.errors} />
+                {/* Email */}
+                <input id="email" type="email" name="email" placeholder="E-mail Address" />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
+                {/* Phone */}
+                <input id="phone" type="tel" name="phone" placeholder="Phone" />
+                <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+                {/* Msg */}
+                <textarea id="message" name="message" placeholder="Message" required />
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
+                <button className="btn btn-primary" type="submit" disabled={state.submitting}>
+                  Submit
+                </button>
+              </form>
             </Col>
           </Row>
         </Container>
