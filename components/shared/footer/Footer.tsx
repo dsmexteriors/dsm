@@ -10,7 +10,7 @@ export default function Footer() {
         <Container>
           <Row className="d-flex">
             <Col lg="6">
-              <p>Address goes here | P: 289 936 0708 | E: matejkozul23@gmail.com</p>
+              <p>P: (289) 968-3363 | E: info@dsmexteriors.ca</p>
               <p className={styles.siteLink}>
                 <a href="https://infused.agency">Niagara web design</a> by Infused Agency
               </p>
