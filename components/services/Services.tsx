@@ -64,7 +64,7 @@ const Services: React.FC<ServicesProps> = ({
                   animate={mainControls}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  <Image className="img-fluid" src={imageOne} width={100} height={100} alt="Icon One" />
+                  <Image className="img-fluid" src={imageOne} width={100} height={100} alt="Icon Onee" />
                   <h4>{titleOne}</h4>
                 </motion.div>
               </Col>
